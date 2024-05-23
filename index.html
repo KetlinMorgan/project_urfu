@@ -6,7 +6,7 @@
     <title>Редкие растения Свердловской области</title>
     <style>
         body {
-            font-family: Montserrat
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -15,50 +15,45 @@
             background-image: url('images/back.png'); /* Фон */
             background-size: cover; /* Картинка будет покрывать весь экран */
             background-position: center; /* Центрирование картинки */
-            /* background-image: url('images/vector.png'); Линия */
-            /* background-position: center; Центрирование картинки */
         }
         .header {
             position: absolute;
-            bottom: 20px;
-            left: 200px;
+            bottom: 49px; /* Отступ снизу */
+            left: 226px; /* Отступ слева */
             color: #FFFFFF;
-            font-weight: normal;
-            font-family: Montserrat
-            weight: 400
+            font-weight: 400; /* Вес шрифта */
+            line-height: 84.48px; /* Высота строки */
         }
         .header h1 {
             font-size: 96px; /* Размер заголовка */
-            font-family: Montserrat
             color: #FFFFFF;
+            line-height: 84.48px; /* Высота строки */
         }
         .nav {
             font-size: 18px;
-            font-family: Montserrat
+            line-height: 21.6px; /* Высота строки */
             background-color: #1E4391;
             width: 200px;
             position: fixed;
-            right: 0;
-            top: 0;
-            bottom: 0;
+            right: 101px; /* Отступ справа */
+            top: 160px; /* Отступ сверху */
+            bottom: 231px; /* Отступ снизу */
             display: flex;
             flex-direction: column;
         }
         .nav a {
             color: white;
-            font-family: Montserrat
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-            border-bottom: 1px solid white;
         }
         .nav a:hover {
             background-color: #ddd;
-            color: 1E4391;
+            color: #1E4391;
         }
         .container {
             padding: 20px;
-            margin-right: 220px; /* Оставляем место для меню */
+            margin-right: calc(200px + 101px); /* Оставляем место для меню */
         }
     </style>
 </head>
@@ -73,7 +68,7 @@
         <a href="#search">Поиск растений</a>
         <a href="#herbarium">Виртуальный гербарий</a>
         <a href="#map">Карта размещения</a>
-        <a href="#map">Ссылки на источники</a>
+        <a href="#sources">Ссылки на источники</a>
     </div>
 
     <div class="container">
