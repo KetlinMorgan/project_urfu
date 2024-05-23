@@ -1,45 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Редкие растения Свердловской области</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4CAF50;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header h1 {
+            color: white;
+            margin: 0;
+        }
+        .nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .separator {
+            border-left: 1px solid white;
+            height: 100%;
+            display: inline-block;
+        }
+        .container {
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
+
+    <div class="nav">
+        <a href="#about">О проекте</a>
+        <div class="separator"></div>
+        <a href="#plants">Редкие растения Свердловской области</a>
+        <div class="separator"></div>
+        <a href="#search">Поиск растений</a>
+        <div class="separator"></div>
+        <a href="#herbarium">Виртуальный гербарий</a>
+        <div class="separator"></div>
+        <a href="#map">Карта размещения</a>
+    </div>
+
+    <div class="header">
         <h1>Редкие растения Свердловской области</h1>
-        <p>Добро пожаловать в интерактивную информационную систему «Редкие растения Свердловской области» о редких видах региона.</p>
-    </header>
+    </div>
 
-    <section>
-        <h2>Алфавитный список видов</h2>
-        <ul>
-            <li><a href="#">Вид 1</a></li>
-            <li><a href="#">Вид 2</a></li>
-            <li><a href="#">Вид 3</a></li>
-            <!-- Добавьте остальные виды по алфавиту -->
-        </ul>
-    </section>
+    <div class="container">
+        <!-- Основное содержимое страницы -->
+    </div>
 
-    <section>
-        <h2>Систематический список видов</h2>
-        <select>
-            <option value="" disabled selected>Выберите категорию</option>
-            <optgroup label="Категория 1">
-                <option value="">Подвид 1.1</option>
-                <option value="">Подвид 1.2</option>
-            </optgroup>
-            <optgroup label="Категория 2">
-                <option value="">Подвид 2.1</option>
-                <option value="">Подвид 2.2</option>
-            </optgroup>
-            <!-- Добавьте другие категории и подвиды -->
-        </select>
-    </section>
-
-    <footer>
-        <p>Адрес: 620000, Российская Федерация, г. Екатеринбург, ул. Тургенева, д. 4, к. 613</p>
-    </footer>
 </body>
 </html>
