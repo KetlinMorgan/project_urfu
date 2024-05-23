@@ -9,39 +9,44 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
         }
         .header {
-            background-color: #4CAF50;
-            padding: 10px 0;
-            text-align: center;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
         }
         .header h1 {
-            color: white;
+            font-size: 3em; /* Увеличение размера заголовка в три раза */
+            color: #4CAF50;
             margin: 0;
         }
         .nav {
             background-color: #333;
-            overflow: hidden;
+            width: 200px;
+            position: fixed;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
         }
         .nav a {
-            float: left;
-            display: block;
             color: white;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            border-bottom: 1px solid white;
         }
         .nav a:hover {
             background-color: #ddd;
             color: black;
         }
-        .separator {
-            border-left: 1px solid white;
-            height: 100%;
-            display: inline-block;
-        }
         .container {
             padding: 20px;
+            margin-right: 220px; /* Оставляем место для меню */
         }
     </style>
 </head>
@@ -49,22 +54,18 @@
 
     <div class="nav">
         <a href="#about">О проекте</a>
-        <div class="separator"></div>
         <a href="#plants">Редкие растения Свердловской области</a>
-        <div class="separator"></div>
         <a href="#search">Поиск растений</a>
-        <div class="separator"></div>
         <a href="#herbarium">Виртуальный гербарий</a>
-        <div class="separator"></div>
         <a href="#map">Карта размещения</a>
-    </div>
-
-    <div class="header">
-        <h1>Редкие растения Свердловской области</h1>
     </div>
 
     <div class="container">
         <!-- Основное содержимое страницы -->
+    </div>
+
+    <div class="header">
+        <h1>Редкие растения Свердловской области</h1>
     </div>
 
 </body>
