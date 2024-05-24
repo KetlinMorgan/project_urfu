@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
-    <title>Редкие растения Свердловской области</title>
+    <title>Информационная система Флора Свердловской области</title>
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -20,26 +20,24 @@
         .header {
             position: absolute;
             bottom: 30px; /* Отступ снизу */
-            left: 250px; /* Отступ слева */
+            left: 5%; /* Отступ слева */
             color: #FFFFFF;
-            line-height: 84.48px; /* Высота строки */
+            line-height: 1.1; /* Высота строки */
         }
         .header h1 {
-            font-size: 96px; /* Размер заголовка */
+            font-size: 6vw; /* Размер заголовка в зависимости от ширины экрана */
             color: #FFFFFF;
-            line-height: 84.48px; /* Высота строки */
             font-weight: 100; /* Вес шрифта */
-            letter: -2%
         }
         .nav {
-            font-size: 18px;
-            line-height: 21.6px; /* Высота строки */
+            font-size: 1.2em;
+            line-height: 1.2; /* Высота строки */
             background-color: #1E4391;
-            width: 200px;
+            width: 15vw; /* Ширина меню в зависимости от ширины экрана */
             position: fixed;
-            right: 101px; /* Отступ справа */
-            top: 140px; /* Отступ сверху */
-            bottom: 231px; /* Отступ снизу */
+            right: 5%; /* Отступ справа */
+            top: 10vh; /* Отступ сверху */
+            bottom: 10vh; /* Отступ снизу */
             display: flex;
             flex-direction: column;
             align-items: flex-end; /* Выравнивание по правой стороне */
@@ -47,7 +45,7 @@
         .nav a {
             color: white;
             text-align: right; /* Выравнивание текста по правой стороне */
-            padding: 14px 16px;
+            padding: 10px 15px;
             text-decoration: none;
         }
         .nav a:hover {
@@ -56,7 +54,64 @@
         }
         .container {
             padding: 20px;
-            margin-right: calc(200px + 101px); /* Оставляем место для меню */
+            margin-right: calc(15vw + 5%); /* Оставляем место для меню */
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                left: 5%;
+                bottom: 20px;
+                line-height: 1.1;
+            }
+
+            .header h1 {
+                font-size: 8vw; /* Увеличиваем размер заголовка на меньших экранах */
+            }
+
+            .nav {
+                width: 25vw; /* Увеличиваем ширину меню на меньших экранах */
+                right: 5%;
+                top: 10vh;
+                bottom: 10vh;
+                font-size: 1em; /* Уменьшаем размер шрифта в меню */
+            }
+
+            .container {
+                margin-right: calc(25vw + 5%);
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                left: 5%;
+                bottom: 10px;
+                line-height: 1.1;
+            }
+
+            .header h1 {
+                font-size: 10vw; /* Еще больше увеличиваем размер заголовка на самых маленьких экранах */
+                line-height: 1.2;
+            }
+
+            .nav {
+                width: 50vw; /* Еще больше увеличиваем ширину меню на самых маленьких экранах */
+                right: 5%;
+                top: 10vh;
+                bottom: auto; /* Убираем фиксированный нижний отступ */
+                font-size: 0.8em; /* Еще больше уменьшаем размер шрифта в меню */
+                align-items: flex-start; /* Выравнивание по левой стороне */
+                padding-bottom: 20px; /* Добавляем отступ снизу для удобства прокрутки */
+                overflow-y: auto; /* Добавляем прокрутку для длинного меню */
+            }
+
+            .nav a {
+                text-align: left; /* Выравнивание текста по левой стороне */
+                padding-left: 20px; /* Добавляем отступ слева для удобства чтения */
+                 .container {
+                margin-right: calc(50vw + 5%);
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -80,7 +135,7 @@
 
     <div class="header">
         <h1>
-            Редкие растения<br>Свердловской<br>области
+            Информационная система<br>Флора Свердловской<br>области
         </h1>
     </div>
 
