@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <title>Информационная система Флора Свердловской области</title>
     <style>
         body {
@@ -25,10 +25,9 @@
             line-height: 1.1; /* Высота строки */
         }
         .header h1 {
-            font-size: 64px;
-            p{font-size: 1.4rem;} /* Размер заголовка в зависимости от ширины экрана */
+            font-size: 6vw; /* Размер заголовка в зависимости от ширины экрана */
             color: #FFFFFF;
-            font-weight: 100; /* Вес шрифта */
+            font-weight: 600; /* Вес шрифта */
         }
         .nav {
             font-size: 1.2em;
@@ -37,8 +36,8 @@
             width: 15vw; /* Ширина меню в зависимости от ширины экрана */
             position: fixed;
             right: 5%; /* Отступ справа */
-            top: 9vh; /* Отступ сверху */
-            bottom: 11vh; /* Отступ снизу */
+            top: 10vh; /* Отступ сверху */
+            bottom: 10vh; /* Отступ снизу */
             display: flex;
             flex-direction: column;
             align-items: flex-end; /* Выравнивание по правой стороне */
@@ -58,11 +57,9 @@
             margin-right: calc(15vw + 5%); /* Оставляем место для меню */
         }
 
-        @media (max-width: 1440px) and (min-width: 900px) {
+        @media (max-width: 1400px) and (min-width: 900px) {
             .header h1 {
                 font-size: 64px; /* Фиксированный размер шрифта для разрешения 1440x900 */
-                left: 230px; /* Отступ слева */
-                bottom: 30px; /* Отступ снизу */
                 line-height: 1.1; /* Высота строки */
             }
         }
@@ -128,6 +125,18 @@
                 padding: 10px;
             }
         }
+
+        .image-left-bottom {
+            position: absolute;
+            left: 19px; /* Отступ слева */
+            bottom: 40px; /* Отступ снизу */
+        }
+
+        .image-right-top {
+            position: absolute;
+            right: 40px; /* Отступ справа */
+            top: 30px;   /* Отступ сверху */
+        }
     </style>
 </head>
 <body>
@@ -153,6 +162,9 @@
             Информационная система<br>Флора Свердловской<br>области
         </h1>
     </div>
+
+    <img src="images/logo_white.png" class="image-left-bottom">
+    <img src="images/images/logo_urfu.png" class="image-right-top">
 
 </body>
 </html>
