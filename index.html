@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <title>Информационная система Флора Свердловской области</title>
+    <title>Редкие растения Свердловской области</title>
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -25,7 +25,7 @@
             line-height: 1.1; /* Высота строки */
         }
         .header h1 {
-            font-size: 6vw; /* Размер заголовка в зависимости от ширины экрана */
+            font-size: clamp(1rem, 6vw, 64px); /* Размер заголовка с ограничением максимального размера */
             color: #FFFFFF;
             font-weight: 600; /* Вес шрифта */
         }
@@ -59,7 +59,7 @@
 
         @media (max-width: 1400px) and (min-width: 900px) {
             .header h1 {
-                font-size: 64px; /* Фиксированный размер шрифта для разрешения 1440x900 */
+                font-size: clamp(1rem, 6vw, 64px); /* Размер заголовка с ограничением максимального размера */
                 line-height: 1.1; /* Высота строки */
             }
         }
@@ -72,7 +72,7 @@
             }
 
             .header h1 {
-                font-size: 8vw; /* Увеличиваем размер заголовка на меньших экранах */
+                font-size: clamp(1rem, 8vw, 64px); /* Увеличиваем размер заголовка на меньших экранах с ограничением максимального размера */
                 left: auto; /* Убираем фиксированный отступ слева */
             }
 
@@ -99,7 +99,7 @@
             }
 
             .header h1 {
-                font-size: 10vw; /* Еще больше увеличиваем размер заголовка на самых маленьких экранах */
+                font-size: clamp(1rem, 10vw, 64px); /* Еще больше увеличиваем размер заголовка на самых маленьких экранах с ограничением максимального размера */
                 line-height: 1.2;
                 left: auto; /* Убираем фиксированный отступ слева */
             }
@@ -130,12 +130,16 @@
             position: absolute;
             left: 19px; /* Отступ слева */
             bottom: 50px; /* Отступ снизу */
+            width: 155px; /* Фиксированная ширина изображения */
+            height: 175px; /* Фиксированная высота изображения */
         }
 
         .image-left-top {
             position: absolute;
             left: 40px; /* Отступ справа */
             top: 30px;   /* Отступ сверху */
+            width: 119px; /* Фиксированная ширина изображения */
+            height: 40px; /* Фиксированная высота изображения */
         }
     </style>
 </head>
