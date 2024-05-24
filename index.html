@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
-    <title>Информационная система Флора Свердловской области</title>
+    <title>Редкие растения Свердловской области</title>
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -20,7 +20,7 @@
         .header {
             position: absolute;
             bottom: 30px; /* Отступ снизу */
-            left: 5%; /* Отступ слева */
+            left: 230px; /* Отступ слева */
             color: #FFFFFF;
             line-height: 1.1; /* Высота строки */
         }
@@ -57,6 +57,12 @@
             margin-right: calc(15vw + 5%); /* Оставляем место для меню */
         }
 
+        @media (max-width: 1400px) and (min-width: 900px) {
+            .header h1 {
+                font-size: 64px; /* Фиксированный размер шрифта для разрешения 1400x900 */
+            }
+        }
+
         @media (max-width: 768px) {
             .header {
                 left: 5%;
@@ -66,6 +72,7 @@
 
             .header h1 {
                 font-size: 8vw; /* Увеличиваем размер заголовка на меньших экранах */
+                left: auto; /* Убираем фиксированный отступ слева */
             }
 
             .nav {
@@ -87,11 +94,13 @@
                 left: 5%;
                 bottom: 10px;
                 line-height: 1.1;
+                left: auto; /* Убираем фиксированный отступ слева */
             }
 
             .header h1 {
                 font-size: 10vw; /* Еще больше увеличиваем размер заголовка на самых маленьких экранах */
                 line-height: 1.2;
+                left: auto; /* Убираем фиксированный отступ слева */
             }
 
             .nav {
@@ -108,7 +117,9 @@
             .nav a {
                 text-align: left; /* Выравнивание текста по левой стороне */
                 padding-left: 20px; /* Добавляем отступ слева для удобства чтения */
-                 .container {
+            }
+
+            .container {
                 margin-right: calc(50vw + 5%);
                 padding: 10px;
             }
@@ -135,7 +146,7 @@
 
     <div class="header">
         <h1>
-            Информационная система<br>Флора Свердловской<br>области
+            Редкие растения<br>Свердловской<br>области
         </h1>
     </div>
 
